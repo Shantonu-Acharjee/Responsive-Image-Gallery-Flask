@@ -48,8 +48,15 @@
 
 .container .box .dream img{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 10px;
+    border: 3px solid rgb(212, 72, 165);
+    transition: transform .5s;
+}
+
+
+.container .box .dream img:hover{
+    transform: scale(1.04);
 }
 
 .container .refreshBtn{
@@ -57,10 +64,6 @@
     
 }
 
-
-.container .refreshBtn a{
-    text-decoration: none;
-}
 
 
 .container .refreshBtn button{
