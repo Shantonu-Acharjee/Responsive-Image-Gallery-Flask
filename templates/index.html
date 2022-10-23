@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ResponsiveImageGallery</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
 </head>
 
 
@@ -22,26 +22,32 @@
         <div class="box">
 
             <div class="dream">
-                <img src="../photo/1.webp" alt="">
-                <img src="../photo/2.webp" alt="">
-                <img src="../photo/3.webp" alt="">
+                <img src="{{ url_for('static', filename = 'photo/1.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/2.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/3.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/4.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/5.webp') }}" alt="">
             </div>
 
 
 
             <div class="dream">
-                <img src="../photo/4.webp" alt="">
-                <img src="../photo/1.webp" alt="">
-                <img src="../photo/2.webp" alt="">
+                <img src="{{ url_for('static', filename = 'photo/2.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/4.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/1.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/3.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/5.webp') }}" alt="">
             </div>
 
 
 
 
             <div class="dream">
-                <img src="../photo/3.webp" alt="">
-                <img src="../photo/4.webp" alt="">
-                <img src="../photo/5.webp" alt="">
+                <img src="{{ url_for('static', filename = 'photo/5.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/4.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/3.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/2.webp') }}" alt="">
+                <img src="{{ url_for('static', filename = 'photo/1.webp') }}" alt="">
             </div>
 
         </div><!-- box End -->
@@ -61,6 +67,6 @@
 
 
 
-    <script type="text/javascript" src="../static/script/main.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'script/main.js') }}"></script>
 </body><!-- Body End -->
 </html>
