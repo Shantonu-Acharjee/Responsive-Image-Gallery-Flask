@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.container .heading{
+    margin-bottom: 20px;
+}
+
+
+.container .heading h1{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    color: rgb(144 212 72);
+}
+
+
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+
+.container .box .dream img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.container .refreshBtn{
+    width: 32.5%;
+    
+}
+
+
+.container .refreshBtn a{
+    text-decoration: none;
+}
+
+
+.container .refreshBtn button{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .container .refreshBtn button{
+        font-size: 1rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px){
+    .container .refreshBtn button{
+        font-size: 0.7rem;
+    }
+}
